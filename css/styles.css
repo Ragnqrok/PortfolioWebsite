@@ -1,0 +1,371 @@
+/* css reset*/
+	body, header, nav, nav ul, main, h1, p, footer, img, script, ul, li  {
+		margin: 0;
+		padding: 0;
+		border: 0; 
+	}
+	.desktopheader{
+		display:none;
+	}
+	
+	body {
+		background-color: #000;
+		text-decoration: none;
+		color:#fff;
+	}
+	.skip{
+		position:absolute;
+		left: -999px;
+	}
+	
+	.skip:focus{
+		color:#000;
+		Background-color:#333333;
+		text-decoration:none;
+		padding:0.5%;
+		top:auto;
+		left:auto;
+		right:1px;
+		z-index:1;
+	}
+	
+	img{
+	max-width: 100%;
+	display: block;
+	}
+	
+	
+	header{
+		top: 0;
+		background-color:#000;
+		height: 50%;
+	}
+	
+	#mobileheader img{
+		border-radius: 8px;
+		padding: 4%;
+	}
+	
+	/* style rules for hamburger*/
+	
+	
+	.mobile-nav a{
+		color: #fff;
+		text-align: center;
+		font-size: 2em;
+		text-decoration:none;
+		padding:2%;
+		display:block;
+		margin: 0 auto;
+		margin-bottom:2%;
+	}
+	
+	#menu-links{
+		padding-top:20%;
+	}
+	
+	.mobile-nav a.menu-icon{
+		display:block;
+		position:absolute;
+		right:0;
+		top:0;
+	}
+
+	.Hero{
+		display: none;
+	}
+
+	nav li a {
+		background-color: #333333;
+		max-width: 50%;
+		text-align:center;
+		border-radius: 5px;
+	}
+
+	main {
+		clear: left;
+		font-size:1.5em;
+		color: #fff;
+		background-color:#000;
+		text-align:center;
+	}
+	
+	programming-main li a{
+		text-decoration: none;
+		color:#fff;
+	}
+
+	.tab-desk, #menu-links{
+		display:none;
+	}
+
+	footer{
+		clear:left;
+		background-color:#333333;
+		color:#fff;
+		text-align:center;
+		
+	}
+
+	#footer{
+		position:relative;
+		bottom:-140px;
+	}
+
+
+	.mailto a{
+		text-decoration: none;
+	}
+
+
+
+
+	.callm a{
+		text-decoration:none;
+	}
+
+	.callmtext{
+		text-decoration:none;
+		font-size: 2.5em;
+		color:#fff;
+		background-color:#333333;
+		padding: 2%;
+		margin: 0 auto;
+		width: 80%;
+		text-align: center;
+		border-radius: 5px;
+	}
+
+	.map {
+		max-width:85%;
+	}
+	
+/*media query for desktop viewport*/
+@media screen and (min-width: 715px),print{
+	
+	.callm, .mobile-nav{
+		display:none;
+	}
+	
+	#mobileheader{
+		display:none;
+	}
+	
+	
+	
+	.desktopheader{
+		display:block;
+		animation: spinmerightround 3s linear infinite;
+	}
+	
+	
+	@keyframes spinmerightround{
+		from{
+			transform: rotate(0deg);
+		}
+		to{
+			transform: rotate(360deg);
+		}
+	}
+	.tab-desk{
+		display:block;
+	}
+	
+	img{
+		max-width:100%;
+	}
+	
+	header {
+			width:25%;
+			float: left;
+	}	
+	
+	nav{
+		float:right;
+		margin-bottom: 1%;
+		padding-bottom:15%;
+		padding-top:3%;
+	}
+	
+	nav li{
+		list-style-type:none;
+		display:inline;
+		font-size:2em;
+
+	}
+	
+	nav li a {
+		display:inline-block;
+		color:#fff;
+		padding: .5em 1em;
+		text-decoration:none;
+	}
+	
+	nav li a:hover{
+		
+		display: inline-block;
+		background-color: #fff;
+		color:#000;
+		transform: scale(1.1);
+	}
+
+	
+	
+	#Hero img{
+		clear:left;
+		display:block;
+		width:100%;
+	}
+	
+	
+	
+	main{
+		clear: left;
+		font-size: 1.5em;
+		color: #fff;
+		background-color: #000;
+		text-align: center;
+		padding:2%;
+	}
+	.indexmain{
+		display: block;
+		text-align:center;
+	}
+	
+	.indexmain li{
+		list-style-type:none;
+	}
+	
+	#programming-main {
+		position: relative;
+		display: inline-block;
+		text-decoration:none;	
+		color:#fff;
+		margin: 0 auto;	
+		text-align: center;
+	}
+	
+	#programming-main ul{
+		list-style-type:none;
+		
+	}
+	#programming-main li{
+		text-align:center;
+		color:#fff;
+
+	}
+	#programming-main a{
+		text-decoration:none;
+		text-align:center;
+
+	}
+	#programming-main a li:hover{
+		color:#333333;
+	}
+	
+	#about-main img{
+		padding-top:1%;
+		display: block;
+		padding-left: 35%;
+		width:29%
+	}
+	
+	.mailto{
+		text-align:center;
+		display:inline;
+		margin-top:2em;
+		border-top: 2em;
+		color:#fff;
+		text-decoration:none;
+	}
+	.mailto:hover{
+		color:#000;
+		background-color:#fff;
+	}
+	
+	.contact{
+		padding-top:5em;
+		position:absolute;
+		text-align:center;
+	}
+	.contactlink{
+		color:#000;
+		background-color:#fff;
+	}
+	
+	.map {
+		border:2px solid #fff;
+		max-width:90%;
+	
+	}
+	
+	article{
+		border: solid #fff 0;
+	}
+	#skills-main main{
+		clear:left;
+		background-color:#000;
+	}
+	.Costemer, .coding, .landscaping{
+			width:29%;
+			float: left;
+			display: grid;
+			grid-template-columns: auto auto auto;
+			grid-gap:20px;
+			margin-top:2%;
+			margin-bottom:0;
+			margin-left:2%;
+			margin-right:2%;
+			align-content: center;
+		}
+	.coding a{
+		text-decoration: none;
+		color:#fff;
+	}
+	
+	.coding:hover{
+		transform: scale(1.1);
+	}
+	.landscaping{
+		padding-bottom: 13em;
+		background-color: #333333;
+		
+		
+	}
+			
+	
+	.age{
+		font-size: 0.25em;
+	}
+	
+	
+	footer .copyright{
+		background-color:#514B4C;
+		clear:left;
+		color: #000;
+		font-size: .75em;
+		text-align: center;
+		display:block;
+		margin: 0 auto;
+	
+	}
+	
+	footer p{
+		text-align: center;
+		color:#fff;
+	}
+}
+
+	footer .link{
+		width:10%;
+		padding: 2% 6%;
+	}
+
+	@media print{
+	
+		body{
+			background-color:#fff;
+			color:#000;
+			align-content:center;
+		}
+	}

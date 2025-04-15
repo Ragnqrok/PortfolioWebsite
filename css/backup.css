@@ -1,0 +1,296 @@
+/* css reset*/
+	body, header, nav, nav ul, main, h1, p, footer, img, script {
+		margin: 0;
+		padding: 0;
+		border: 0; 
+	}
+	.desktopheader{
+		display:none;
+	}
+	
+	body {
+		background-color: #000;
+	}
+	
+	img{
+	max-width: 100%;
+	display: block;
+	}
+	
+	
+	header{
+		top: 0;
+		background-color:#000;
+		height: 50%;
+	}
+	
+	#mobileheader img{
+		border-radius: 8px;
+		padding: 4%;
+	}
+	
+	/* style rules for hamburger*/
+	
+	
+	.mobile-nav a{
+		color: #fff;
+		text-align: center;
+		font-size: 2em;
+		text-decoration:none;
+		padding:2%;
+		display:block;
+		margin: 0 auto;
+		margin-bottom:2%;
+		
+	}
+	
+	#menu-links{
+		padding-top:20%;
+	}
+	
+	.mobile-nav a.menu-icon{
+		display:block;
+		position:absolute;
+		right:0;
+		top:0;
+	}
+
+.Hero{
+	display: none;
+}
+
+nav li a {
+	background-color: #333333;
+	max-width: 50%;
+	text-align:center;
+	border-radius: 5px;
+}
+
+main {
+	clear: left;
+	font-size:1.5em;
+	color: #fff;
+	background-color:#000;
+	text-align:center;
+}
+
+.tab-desk, #menu-links{
+	display:none;
+}
+
+footer{
+	background-color:#333333;
+	color:#fff;
+	text-align:center;
+	
+}
+
+#footer{
+	position:relative;
+	bottom:-140px;
+}
+
+
+.mailto a{
+	text-decoration: none;
+}
+
+
+
+
+.callm a{
+	text-decoration:none;
+}
+
+.callmtext{
+	text-decoration:none;
+	font-size: 2.5em;
+	color:#fff;
+	background-color:#333333;
+	padding: 2%;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.map {
+	max-width:85%;
+}
+
+/*media query for desktop viewport*/
+@media screen and (min-width: 715px),print{
+	
+	.callm, .mobile-nav{
+		display:none;
+	}
+	
+	#mobileheader{
+		display:none;
+	}
+	
+	
+	
+	.desktopheader{
+		display:block;
+		animation: spin 3s linear infinite;
+	}
+	
+	
+	@keyframes spin{
+		from{
+			transform: rotate(0deg);
+		}
+		to{
+			transform: rotate(360deg);
+		}
+	}
+	.tab-desk{
+		display:block;
+	}
+	
+	img{
+		max-width:100%;
+	}
+	
+	header {
+			width:25%;
+			float: left;
+	}	
+	
+	nav{
+		float:right;
+		margin-bottom: 1%;
+		padding-bottom:15%;
+		padding-top:3%;
+	}
+	
+	nav li{
+		list-style-type:none;
+		display:inline;
+		font-size:2em;
+		border-top: 5px solid #000;
+	}
+	
+	nav li a {
+		display:inline;
+		color:#fff;
+		padding: .5em 1em;
+		text-decoration:none;
+	}
+	
+	nav li a:hover{
+		display: inline-block;
+		background-color: #fff;
+		color:#000;
+		transform: scale(1.5);
+	}
+	.menu-icon a:hover{
+		display: inline-block;
+		background-color: #fff;
+		color:#000;
+		
+	}
+	
+	
+	#Hero img{
+		clear:left;
+		display:block;
+		width:100%;
+	}
+	
+	
+	
+	main{
+		clear: left;
+		font-size: 1.5em;
+		color: #fff;
+		background-color: #000;
+		align-items: center;
+		padding:2%;
+	}
+	.indexmain{
+		display: block;
+		text-align:center;
+	}
+	
+	.indexmain li{
+		list-style-type:none;
+	}
+	
+	#about-main img{
+		padding-top:1%;
+		display: block;
+		padding-left: 35%;
+		width:29%
+	}
+	
+	.mailto{
+		text-align:center;
+		display:inline;
+		margin-top:2em;
+		border-top: 2em;
+		color:#fff;
+		text-decoration:none;
+	}
+	.mailto:hover{
+		color:#000;
+		background-color:#fff;
+	}
+	
+	.contactlink{
+		color:#000;
+		background-color:#fff;
+	}
+	
+	.map {
+		border:2px solid #fff;
+		max-width:90%;
+	
+	}
+	
+	article{
+		border: solid #fff 0;
+	}
+	
+	.Costemer, .coding, .landscaping{
+			width:29%;
+			float: left;
+			display: grid;
+			grid-template-columns: auto auto auto;
+			grid-gap:20px;
+			margin-top:2%;
+			margin-bottom:0;
+			margin-left:2%;
+			margin-right:2%;
+		}
+			
+	
+	.age{
+		font-size: 0.25em;
+	}
+	
+	footer{
+		background-color:#333333;
+		clear:left;
+		color: #000;
+		font-size: .5em;
+		text-align: center;
+		display:block;
+		margin: 0 auto;
+	
+	}
+	
+	footer p{
+		color:#fff;
+	}
+}
+
+@media print{
+	
+	body{
+		background-color:#fff;
+		color:#000;
+		align-content:center;
+	}
+}
