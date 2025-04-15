@@ -20,7 +20,6 @@ body{
 	background-color: #000;
 	color:#fff;
 }
-@media screen and(max-width:768px){
 header{
 	top: 0;
 	height: 50%;
@@ -275,7 +274,6 @@ footer{
 .footerimg {
 	margin:auto;
 	max-width:350px;
-}
 }
 /*desktop viewport styles*/
 @media screen and (min-width:1200px), print{
