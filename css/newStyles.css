@@ -139,6 +139,7 @@ main #contact h5{
 	font-size:1.2em;
 }
 .map{
+	display:block;
 	margin:auto;
 	max-width:90%;
 	border:2px solid #363636;
@@ -153,6 +154,7 @@ main #contact h5{
 	margin-bottom:2em;
 }
 #skills-main main .coding a{
+	text-align:center;
 	text-decoration:none;
 	color:#999999;
 }
