@@ -190,7 +190,7 @@ footer{
 	justify-content:center;
 }
 /* Styles for tablet viewport*/
-@media screen and (min-width: 630px), print{1
+@media screen and (min-width: 768px), print{1
 /*css reset for tablet viewport*/
 *{
 	clear:left;
