@@ -15,11 +15,12 @@ img{
 	display:block;
 }
 /* Mobile styles*/
-@media screen and(min-width: 320px){
+
 body{
 	background-color: #000;
 	color:#fff;
 }
+@media screen and(max-width:768px){
 header{
 	top: 0;
 	height: 50%;
