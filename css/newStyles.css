@@ -105,7 +105,7 @@ main{
 }
 /* Main styles for Mobile contact*/
 main{
-	padding:em;
+	padding: 2em;
 }
 main #contact h4{
 	text-align:center;
@@ -188,7 +188,6 @@ footer{
 	max-width:300px;
 	margin:auto;
 	justify-content:center;
-}
 }
 /* Styles for tablet viewport*/
 @media screen and (min-width: 768px), print{
@@ -300,7 +299,7 @@ nav li a:hover{
 	transform:Scale(1.1);
 	background-color:#fff;
 	color:#000;
-	transform:skew(1.1);
+	transform:skew(1.1em);
 }
 #Hero{
 	display:block;
