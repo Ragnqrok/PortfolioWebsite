@@ -191,10 +191,7 @@ footer{
 }
 /* Styles for tablet viewport*/
 @media screen and (min-width: 768px), print{
-/*css reset for tablet viewport*/
-*{
-	clear:left;
-}
+
 /*final styles for tablet*/
 .mobile-nav, #menu-links, .menu-icon{
 	display:none;
