@@ -30,12 +30,10 @@ header{
 	padding-top:8%;
 	padding-left:8%;
 }
+
 /* mobile styles for hamburger*/
-#menu-link{
-	margin:5em;
-	border-radius:2em;
-}
 .mobile-nav a{
+	
 		color: #fff;
 		text-align: center;
 		font-size: 2em;
@@ -51,25 +49,48 @@ header{
 @keyframes fadeInUp{
   0%{
     opacity: 0;
-    -webkit-transform: translateY(20px);
+    -webkit-transform: translateY(-200px);
   }
   100%{
     opacity: 0.8;
     -webkit-transform: translateY(0);
   }
 }
+
+@keyframes fadeDownOut{
+  0%{
+	display:block;
+    opacity: 0.8;
+    -webkit-transform: translateY(0);
+  }
+  100%{
+	display:none;
+    opacity: 0;
+    -webkit-transform: translateY(-200px);
+  }
+}
+
 #menu-links{
 	padding-top:20%;
 	opacity:0;
 	animation: fadeInUp 500ms forwards;
 }
 
-.mobile-nav a.menu-icon{
+	
+#menu-links.secondClass{
+	padding-top:20%;
+	opacity:.8;
+	animation: fadeDownOut 500ms forwards;
+}
+	
+
+.mobile-nav a.menu-icon {
 	display:block;
 	position:absolute;
 	right:0;
 	top:0;
 }
+
 /*Exiting nav mobile styles*/
 .hero{
 	display:none;
@@ -116,9 +137,7 @@ main{
 	font-size:1.7em;
 }
 /* Main styles for Mobile contact*/
-main{
-	padding: 2em;
-}
+
 main #contact h4{
 	text-align:center;
 }
@@ -166,7 +185,6 @@ main #contact h5{
 	margin-bottom:2em;
 }
 #skills-main main .coding a{
-	text-align:center;
 	text-decoration:none;
 	color:#999999;
 }
@@ -175,6 +193,7 @@ main #contact h5{
 	text-align:center;
 	padding:2em;
 }
+
 #programming-main main p{
 	margin-bottom:1.4em;
 }
@@ -203,9 +222,9 @@ footer{
 	margin:auto;
 	justify-content:center;
 }
-/* Styles for tablet viewport*/
-@media screen and (min-width: 768px), print{
 
+/* Styles for tablet viewport*/
+@media screen and (min-width:630px), print{
 /*final styles for tablet*/
 .mobile-nav, #menu-links, .menu-icon{
 	display:none;
@@ -285,6 +304,7 @@ footer{
 	margin:auto;
 	max-width:350px;
 }
+}
 /*desktop viewport styles*/
 @media screen and (min-width:1200px), print{
 /* Desktop viewport main styles*/
@@ -310,7 +330,7 @@ nav li a:hover{
 	transform:Scale(1.1);
 	background-color:#fff;
 	color:#000;
-	transform:skew(1.1em);
+	transform:skew(1.1);
 }
 #Hero{
 	display:block;
