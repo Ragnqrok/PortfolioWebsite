@@ -89,8 +89,16 @@ header{
 	position:absolute;
 	right:0;
 	top:0;
+	cursor: pointer;
 }
 
+a#menu-iconX {
+	display:none;
+	position:absolute;
+	right:.4%;
+	top:.5%;
+	cursor:pointer;
+}
 /*Exiting nav mobile styles*/
 .hero{
 	display:none;
