@@ -186,7 +186,8 @@ main #contact h5{
 }
 /* Skills styles for mobile*/
 #skills-main main{
-	text-align:center;
+	text-align:
+	center;
 	padding:2em;
 }
 #skills-main main p {
@@ -210,6 +211,17 @@ main #contact h5{
 }
 #programming-main main .title, #programming-main main .js{
 	font-size:1.3em;
+}
+#button{
+	margin-top:.8em;
+}
+#button a{
+	padding: 0.1em 0.75em;
+	text-decoration:none;
+	color:#fff;
+	font-size:1.3em;
+	background-color:#363636;
+	border-radius:2em;
 }
 #programming-main main a{
 	text-decoration:none;
