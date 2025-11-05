@@ -219,7 +219,7 @@ main #contact h5{
 	padding: 0.1em 0.75em;
 	text-decoration:none;
 	color:#fff;
-	font-size:1.3em;
+	font-size:1.5em;
 	background-color:#363636;
 	border-radius:2em;
 }
@@ -434,4 +434,5 @@ article{
 	margin:auto;
 	justify-content:center;
 	max-width:350px;
+
 }
