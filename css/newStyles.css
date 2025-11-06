@@ -198,6 +198,10 @@ main #contact h5{
 	color:#999999;
 	text-align: center;
 }
+.coding {
+	float: center;
+	text-align:center;
+}
 /* programming styles for mobile*/
 #programming-main main{
 	text-align:center;
@@ -437,4 +441,5 @@ article{
 	max-width:350px;
 
 }
+
 
