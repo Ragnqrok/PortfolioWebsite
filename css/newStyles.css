@@ -196,6 +196,7 @@ main #contact h5{
 #skills-main main .coding a{
 	text-decoration:none;
 	color:#999999;
+	text-align: center;
 }
 /* programming styles for mobile*/
 #programming-main main{
@@ -436,3 +437,4 @@ article{
 	max-width:350px;
 
 }
+
